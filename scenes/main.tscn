@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
 [ext_resource type="Script" path="res://scripts/virtual_controls.gd" id="2_controls"]
+[ext_resource type="Script" path="res://scripts/futuristic_city.gd" id="3_city"]
 
 [sub_resource type="Environment" id="Environment"]
 background_mode = 1
@@ -30,6 +31,7 @@ radius = 0.38
 height = 1.8
 
 [node name="Main" type="Node3D"]
+script = ExtResource("3_city")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment")
