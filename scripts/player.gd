@@ -40,7 +40,7 @@ func _physics_process(delta: float) -> void:
     input_vector = input_vector.limit_length()
 
     var direction := (transform.basis * Vector3(input_vector.x, 0, input_vector.y)).normalized()
-    if direction:
+    if direction.length() > 0.001:
         velocity.x = direction.x * move_speed
         velocity.z = direction.z * move_speed
     else:
