@@ -2,14 +2,17 @@
 
 **Open Adventure 3D** is an open-source third-person 3D adventure game starter built with **Godot 4** and **GDScript**. The project is intended to support desktop and Android.
 
+The visual direction is an original science-fiction monster-hunting adventure: futuristic city districts, exploration, dangerous creatures, and character progression. It takes broad genre inspiration from 3D science-fiction animation, without copying protected characters, designs, names, or assets.
+
 ## Current prototype
 
 - A small 3D test environment with a controllable third-person character
 - Keyboard movement (WASD), mouse camera control, and jump (Space)
 - Basic touch movement, camera drag, and jump button on touch devices
 - Godot Compatibility renderer selected for broad desktop and mobile support
+- Procedurally generated futuristic avenue with buildings, windows, sidewalks, road markings, street props, and building collisions
 
-This is an early playable foundation, not a finished adventure game. Missions, enemies, combat, inventory, collectibles, save/load, and full Android export configuration are planned work.
+The city is an early greybox environment made from Godot primitives. It is intended to establish scale and gameplay layout before original Blender models, textures, animation, and sound are added.
 
 ## Run the game
 
@@ -28,12 +31,14 @@ This is an early playable foundation, not a finished adventure game. Missions, e
 - [x] Godot project foundation and main scene
 - [x] Third-person movement and camera prototype
 - [x] Initial Android touch controls
+- [x] First procedural futuristic city greybox
+- [ ] Original Blender buildings, props, and environment art
+- [ ] Player character model, animation, and combat
+- [ ] Monster enemies and basic AI
 - [ ] Mission and quest framework
 - [ ] Collectibles and inventory
-- [ ] Enemies and basic combat
 - [ ] Save/load system
 - [ ] Android export presets and device testing
-- [ ] Original or properly licensed world art, audio, and animations
 
 ## License
 
