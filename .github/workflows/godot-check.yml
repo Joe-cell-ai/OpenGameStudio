@@ -1,0 +1,19 @@
+name: Godot project check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  import-check:
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.4.1
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import project
+        run: godot --headless --editor --path . --quit
+      - name: Run main scene
+        run: godot --headless --path . --quit-after 5
